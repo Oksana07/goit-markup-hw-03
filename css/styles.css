@@ -7,6 +7,12 @@
   --info-color: #757575;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -120,13 +126,23 @@ color: #ffffff;
   color: #ffffff;
 }
 
+.button {
+display: inline;
+font-family: inherit;
+background: #f5f4fa;
+border-radius: 4px;
+}
+
 .button-style {
 font-weight: 500;
-font-size: 16;
-line-height: 1.62px;
+font-size: 16px;
+line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+padding: 6px 22px;
+background: #f5f4fa;
+border-radius: 4px;
 }
 
 .main {
