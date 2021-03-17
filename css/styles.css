@@ -1,0 +1,231 @@
+:root {
+  --main-text-color: #212121;
+  --accent-color: #2196f3;
+  --dark-bg-text-color: #2f303a;
+  --title-color: #212121;
+  --waite-bg-color: #ffffff;
+  --info-color: #757575;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--waite-bg-color);
+}
+
+address {
+  font-style: normal;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo-web {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+}
+
+.logo-studio {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #757575;
+}
+
+.contakts {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var (--info-color);
+}
+
+.menu {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.link:hover,
+.link:focus {
+color: #2196f3;
+}
+
+.link.current {
+color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.header {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.main-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.page-taitle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  background-color:#188ce8;
+  color: #ffffff;
+}
+
+.button-style {
+font-weight: 500;
+font-size: 16;
+line-height: 1.62px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.main {
+background-color: #2f303a;
+}
+
+.about-title {
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--title-color);
+}
+
+.about-info {
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--info-color);
+}
+
+.business-title {
+font-weight: bold;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+color: var(--title-color);
+}
+
+.team-title {
+font-weight: bold;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+color: var(--title-color);
+}
+
+.team-collaborator {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+color: var(--title-color);
+}
+
+.team-profession {
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--info-color);
+}
+
+.footer {
+background-color: #2f303a;
+}
+.footer .logo-studio {
+font-family: Raleway;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.19;
+color: #ffffff;
+}
+.footer .map {
+font-size: 14px;
+line-height: 1.71;
+color: #ffffff;
+}
+
+.footer .contakt {
+font-size: 14px;
+line-height: 1.71;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.main .button {
+font-family: Roboto;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+color: #ffffff;
+background-color: #2196f3;
+}
+
+.portfolio-title {
+font-weight: bold;
+font-size: 18px;
+line-height: 2.00;
+letter-spacing: 0.06em;
+color: #212121;
+}
+
+.our-services {
+font-size: 16px;
+line-height: 1.87;
+color:var(--info-color);
+}
+
+ a {
+   text-decoration: none;
+ }
