@@ -129,7 +129,7 @@ color: #2196f3;
 
 .contakts {
 font-weight: 500;
-font-size: 14px;
+font-size: 1.14;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var (--info-color);
@@ -157,7 +157,7 @@ margin-right: 50px;
 
 .main-hiro {
   background-color: #2f303a;
-  height: 400px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -172,7 +172,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #ffffff;
-padding-top: 100px;
+padding-top: 200px;
 }
 
 .main-hiro .button {
@@ -217,18 +217,19 @@ display: inline;
 font-family: inherit;
 background: #f5f4fa;
 border-radius: 4px;
-
+cursor: pointer;
 }
 
 .button-style {
 font-weight: 500;
 font-size: 16px;
-line-height: 1.62;
+line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 padding: 6px 22px;
 background: #f5f4fa;
+cursor: pointer;
 border-radius: 4px;
 }
 
