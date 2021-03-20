@@ -24,14 +24,14 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+	margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 20px;
 }
 
 body {
@@ -52,7 +52,6 @@ address {
 color: #2196f3;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -64,19 +63,35 @@ color: #2196f3;
   clip: rect(0 0 0 0)
 }
 
-.link.current {
-  color: var(--accent-color);
+.conteiner {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
   }
 
-  .list {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header.conteiner {
+  display: flex;
+  align-items: center;
+
+}
+
+.navivation {
+  display: flex;
+}
 
 .logo {
   text-decoration: none;
+  display: flex;
+  margin-right: 93px;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-web {
@@ -95,73 +110,69 @@ color: #2196f3;
   color: #000000;
 }
 
+.menu-item {
+  padding: 32px 0; 
+  }
+
+  .menu-item:not(:last-child){
+  margin-right: 50px;
+  }
+
+.menu-item .link:hover,
+.menu-item .link:focus {
+  color: #2196f3;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+  .list.menu {
+  display: flex;
+  list-style: none;
+    }
+
+  .list.menu .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+
+.list.contakts {
+  display: flex;
+  margin-left: auto;
+}
+
 .link {
-  margin-left: 50px;
+  margin-right: 50px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #757575;
 }
-.conteiner {
-  width: 1200px;
-  height: 80px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  }
 
-.header .conteiner {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.header .logo {
-  margin-right: 90px;
-}
-
-.navivation {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
-.contakts {
+/* .contakts {
 font-weight: 500;
 font-size: 1.14;
 line-height: 1.14;
-letter-spacing: 0.02em;
 color: var (--info-color);
-}
-
-.menu {
-display: flex;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #212121;
-}
-
-.menu-item:not(:last-child){
-display: inline-flex;
-margin-right: 50px;
-}
-
-.conteiner-hiro {
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+} */
 
 .main-hiro {
   background-color: #2f303a;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 200px;
+  padding-top: 200px;
   }
+
+.conteiner.hiro {
+display: flex;
+-ms-flex-direction: column;
+align-items: center;
+}
 
 .main-title-hiro {
 font-weight: 900;
@@ -171,11 +182,11 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #ffffff;
-padding-top: 200px;
+min-width: 696px;
+margin-bottom: 30px;
 }
 
 .main-hiro .button {
-  justify-content: center; 
   color: #ffffff;
   background-color: #2196f3;
   border: none;
@@ -183,32 +194,16 @@ padding-top: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  margin: auto;
-  margin-top: 30px;
   padding: 10px 32px;
-  min-width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   }
-
-.page-taitle {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-}
 
 .button:hover,
 .button:focus {
-  background-color:#188ce8;
-  color: #ffffff;
+background-color:#188ce8;
+color: #ffffff;
 }
 
 .button {
@@ -217,19 +212,6 @@ font-family: inherit;
 background: #f5f4fa;
 border-radius: 4px;
 cursor: pointer;
-}
-
-.button-style {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-padding: 6px 22px;
-background: #f5f4fa;
-cursor: pointer;
-border-radius: 4px;
 }
 
 .conteiner-about {
@@ -312,6 +294,7 @@ color: var(--info-color);
   width: 2135px;
   height: 255px;
 }
+
 .footer {
 background-color: #2f303a;
 height: 255px;
@@ -337,6 +320,19 @@ font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
 }
+
+.button-style {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding: 6px 22px;
+  background: #f5f4fa;
+  cursor: pointer;
+  border-radius: 4px;
+  }
 
 .portfolio-title {
 font-weight: bold;
