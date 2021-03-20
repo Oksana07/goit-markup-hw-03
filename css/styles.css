@@ -1,12 +1,3 @@
-html {
-	box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-	box-sizing: inherit;
-}
 
 :root {
   --main-text-color: #212121;
@@ -23,7 +14,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
 	margin: 0;
   padding: 0;
 }
@@ -47,10 +39,7 @@ address {
   font-style: normal;
 }
 
-.link:hover,
-.link:focus {
-color: #2196f3;
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -83,6 +72,7 @@ header {
 
 .navivation {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -118,13 +108,13 @@ header {
   margin-right: 50px;
   }
 
-.menu-item .link:hover,
-.menu-item .link:focus {
+.link:hover,
+.link:focus {
   color: #2196f3;
 }
 
 .link.current {
-  color: var(--accent-color);
+color: var(--accent-color);
 }
 
   .list.menu {
@@ -170,7 +160,7 @@ color: var (--info-color);
 
 .conteiner.hiro {
 display: flex;
--ms-flex-direction: column;
+flex-direction: column;
 align-items: center;
 }
 
@@ -214,38 +204,34 @@ border-radius: 4px;
 cursor: pointer;
 }
 
-.conteiner-about {
-  width: 1423px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 94px;
+.about {
+  padding: 94px 0;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-title {
 font-weight: bold;
-font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: var(--title-color);
-display: flex; 
-flex-basis: calc(100% /4);
-margin-left: 20px;
+margin-bottom: 10px;
 }
 
 .about-info  {
 line-height: 1.71;
-letter-spacing: 0.03em;
 color: var(--info-color);
-display: block;
-flex-basis: calc(100% /4);
-margin-left: 20px;
+
 }    
 
-.conteiner-business {
-width: 1423px;
-margin-left: auto;
-margin-right: auto;
-padding: 94px;
+.business {
+padding-bottom: 94px;
 }
 
 .business-title {
@@ -254,16 +240,22 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--title-color);
-margin-left: auto;
-margin-right: auto;
+margin-bottom: 50px;
 }
 
-.conteiner-team {
-  width: 1423px;
-  margin-top: 95px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 94px;
+.business-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-img:not(:last-child) {
+margin-right: 30px;
+}
+
+.team {
+background-color: #f5f4fa;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .team-title {
@@ -272,6 +264,24 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--title-color);
+margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px; 
+}
+
+.team-box {
+background: #ffffff;
 }
 
 .team-collaborator {
@@ -280,6 +290,8 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 color: var(--title-color);
+margin-top: 30px;
+margin-bottom: 10px;
 }
 
 .team-profession {
@@ -288,17 +300,13 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--info-color);
+padding-bottom: 30px;
 }
 
-.conteiner-footer {
-  width: 2135px;
-  height: 255px;
-}
 
 .footer {
 background-color: #2f303a;
-height: 255px;
-
+padding: 60px 0;
 }
 
 .footer .logo-studio {
@@ -308,31 +316,43 @@ font-size: 26px;
 line-height: 1.19;
 color: #ffffff;
 }
+.footer .logo-studio:hover,
+.footer .logo-studio:focus {
+color: #2196f3;
+}
+
+.footer-list {
+list-style: none;
+display: inline-block;
+}
 
 .footer .map {
 font-size: 14px;
 line-height: 1.71;
 color: #ffffff;
+margin-bottom: 9px;
 }
 
 .footer .contakt {
 font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
+margin-bottom: 9px;
 }
 
+/* сторінка портфоліо */
 .button-style {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  padding: 6px 22px;
-  background: #f5f4fa;
-  cursor: pointer;
-  border-radius: 4px;
-  }
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+padding: 6px 22px;
+background: #f5f4fa;
+cursor: pointer;
+border-radius: 4px;
+}
 
 .portfolio-title {
 font-weight: bold;
@@ -348,6 +368,6 @@ line-height: 1.87;
 color:var(--info-color);
 }
 
- a {
-   text-decoration: none;
- }
+a {
+text-decoration: none;
+}
