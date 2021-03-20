@@ -31,6 +31,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 20px;
 }
 
 body {
@@ -160,8 +161,6 @@ margin-right: 50px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-
- 
   }
 
 .main-title-hiro {
@@ -233,6 +232,12 @@ cursor: pointer;
 border-radius: 4px;
 }
 
+.conteiner-about {
+  width: 1423px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 94px;
+}
 
 .about-title {
 font-weight: bold;
@@ -240,12 +245,25 @@ font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: var(--title-color);
+display: flex; 
+flex-basis: calc(100% /4);
+margin-left: 20px;
 }
 
-.about-info {
+.about-info  {
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--info-color);
+display: block;
+flex-basis: calc(100% /4);
+margin-left: 20px;
+}    
+
+.conteiner-business {
+width: 1423px;
+margin-left: auto;
+margin-right: auto;
+padding: 94px;
 }
 
 .business-title {
@@ -254,6 +272,16 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--title-color);
+margin-left: auto;
+margin-right: auto;
+}
+
+.conteiner-team {
+  width: 1423px;
+  margin-top: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 94px;
 }
 
 .team-title {
@@ -280,8 +308,14 @@ letter-spacing: 0.03em;
 color: var(--info-color);
 }
 
+.conteiner-footer {
+  width: 2135px;
+  height: 255px;
+}
 .footer {
 background-color: #2f303a;
+height: 255px;
+
 }
 
 .footer .logo-studio {
@@ -303,8 +337,6 @@ font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 .portfolio-title {
 font-weight: bold;
