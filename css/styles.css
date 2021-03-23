@@ -85,8 +85,6 @@ header {
   display: flex;
   margin-right: 93px;
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-web {
@@ -106,11 +104,16 @@ header {
 }
 
 .menu-item {
-  padding: 32px 0; 
+padding: 32px 0;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #212121; 
   }
 
-  .menu-item:not(:last-child){
-  margin-right: 50px;
+.menu-item:not(:last-child){
+margin-right: 50px;
   }
 
 .link:hover,
@@ -212,10 +215,17 @@ cursor: pointer;
 }
 
 /* Про нас */
+.conteiner-about {
+  padding-bottom: 94px;
+}
 
 .about .about-list{
   padding: 94px 0;
   display: flex;
+}
+
+.about-item {
+  width: 270px;
 }
 
 .about-item:not(:last-child) {
@@ -223,12 +233,13 @@ cursor: pointer;
 }
 
 .about-title {
-font-weight: bold;
-line-height: 1.14;
-text-transform: uppercase;
-color: var(--title-color);
-margin-bottom: 10px;
-width: 270px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .about-info  {
@@ -237,6 +248,7 @@ color: var(--info-color);
 }    
 
 /* Секція з фото чим ми займаємось */
+
 .business {
 padding-bottom: 94px;
 }
@@ -357,12 +369,17 @@ margin-bottom: 9px;
 
 /* сторінка портфоліо */
 
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px; 
+}
+
 .portfolio-list-button {
   margin-bottom: 46px;
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
+
 .portfolio-item-button:not(:last-child) {
 margin-right: 8px;
 }
@@ -395,6 +412,7 @@ padding-left: 30px;
   margin-left: 30px;
   margin-top: 30px;
 }
+
 .portfolio-info {
 padding: 20px 24px;
 border: 1px solid var(--card-border-color);
