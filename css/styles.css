@@ -292,6 +292,7 @@ border-radius: 0px 0px 4px 4px;
 .team-box {
 background: #ffffff;
 padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .team-collaborator {
@@ -309,7 +310,6 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--info-color);
-padding-bottom: 30px;
 }
 
 /* Підвал */
