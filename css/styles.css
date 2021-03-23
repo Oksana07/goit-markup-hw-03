@@ -361,6 +361,7 @@ margin-bottom: 9px;
   margin-bottom: 46px;
   display: flex;
   justify-content: center;
+  padding-top: 94px;
 }
 .portfolio-item-button:not(:last-child) {
 margin-right: 8px;
