@@ -213,11 +213,8 @@ cursor: pointer;
 
 /* Про нас */
 
-.about {
+.about .about-list{
   padding: 94px 0;
-}
-
-.about-list {
   display: flex;
 }
 
